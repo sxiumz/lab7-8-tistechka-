@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Тортики & Тістечка</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="lab7-8.css">
+</head>
+
+
+<body>
+
+<div class="page">
+
+  <input class="type-toggle" type="radio" name="type" id="type-all" checked>
+  <input class="type-toggle" type="radio" name="type" id="type-cake">
+  <input class="type-toggle" type="radio" name="type" id="type-pie">
+  <input class="type-toggle" type="radio" name="type" id="type-roll">
+  <input class="type-toggle" type="radio" name="type" id="type-cheese">
+  <input class="type-toggle" type="radio" name="type" id="type-pastry">
+
+  <header class="site-header">
+    <div class="logo-title">
+      <span>Авторська колекція</span>
+      <h1>Тортики <em>&</em> Тістечка</h1>
+      <p class="logo-subtitle">
+        Виберіть настрій, тип десерту та насолоджуйтесь кожним шматочком.
+      </p>
+    </div>
+  </header>
+
+  <section class="filter-bar">
+    <div class="filter-group">
+      <div class="filter-group__title">Тип виробу</div>
+
+      <div class="types-row">
+        <label class="filter-label filter-label--all" for="type-all">Усі</label>
+        <label class="filter-label filter-label--cake" for="type-cake">Торти</label>
+        <label class="filter-label filter-label--pie" for="type-pie">Пироги</label>
+        <label class="filter-label filter-label--roll" for="type-roll">Рулети</label>
+        <label class="filter-label filter-label--cheese" for="type-cheese">Сирники</label>
+        <label class="filter-label filter-label--pastry" for="type-pastry">Тістечка</label>
+
+        <label class="filter-label filter-label--reset" for="type-all">
+          Скинути фільтр
+        </label>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-group__title">Калорії в порції</div>
+
+      <div class="calorie-controls">
+        <div class="calorie-line1">
+          <span>Підійдіть до вибору усвідомлено.</span>
+          <span class="badge-soft">від 120 до 480 кКал</span>
+        </div>
+
+        <input class="calorie-slider" type="range" min="100" max="500" value="350" disabled>
+
+        <div class="calorie-line2">
+          <span>легкі десерти</span>
+          <span>більш ситні</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="layout">
+    <section class="gallery-grid">
+
+      <article class="card cat-pastry">
+        <div class="card-media">
+          <img src="https://kanapulka.com.ua/image/catalog/recipe/chocolate-cupcakes/chocolate-raspberry-cupcakes-16.jpg" alt="Малиновий мафін">
+          <span class="card-tag">Тістечко</span>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Малинові мафіни з вершковим кремом</h2>
+          <p class="card-desc">
+            Ніжне тісто на йогурті та повітряний крем-чиз з легкою кислинкою малини.
+          </p>
+          <div class="card-meta">
+            <span class="kcal-chip">305 кКал</span>
+            <span class="difficulty">Складність: <span>легко</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card cat-cake">
+        <div class="card-media">
+          <img src="https://tortino.com.ua/image/catalog/articles/medovik.jpg" alt="Медовий торт">
+          <span class="card-tag">Торт</span>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Карамельний медовик зі сметанним кремом</h2>
+          <p class="card-desc">
+            Класика у новому прочитанні: медові коржі, карамельна просочення та легкий крем.
+          </p>
+          <div class="card-meta">
+            <span class="kcal-chip">340 кКал</span>
+            <span class="difficulty">Складність: <span>середньо</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card cat-pie">
+        <div class="card-media">
+          <img src="https://static.nv.ua/shared/system/MediaPhoto/images/000/427/959/original/732e0f47cdb5984ea412015983af1991.png" alt="Ягідний пиріг">
+          <span class="card-tag">Пиріг</span>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Пиріг «Три ягоди» з хрусткою решіткою</h2>
+          <p class="card-desc">
+            Стигла малина, чорниця та журавлина в ароматному пісочному тісті.
+          </p>
+          <div class="card-meta">
+            <span class="kcal-chip">298 кКал</span>
+            <span class="difficulty">Складність: <span>легко</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card cat-cheese">
+        <div class="card-media">
+          <img src="https://z-one.com.ua/wp-content/uploads/2025/11/image-45.png" alt="Ванільний сирник">
+          <span class="card-tag">Сирник</span>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Ванільний сирник з цитрусовою ноткою</h2>
+          <p class="card-desc">
+            Кремовий сир, домашній творог і аромат апельсинової цедри на хрусткій основі.
+          </p>
+          <div class="card-meta">
+            <span class="kcal-chip">260 кКал</span>
+            <span class="difficulty">Складність: <span>легко</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card cat-roll">
+        <div class="card-media">
+          <img src="https://img-global.cpcdn.com/recipes/b77fac309916edb8/1200x630cq80/photo.jpg" alt="Шоколадний рулет">
+          <span class="card-tag">Рулет</span>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Шоколадний рулет «Святковий»</h2>
+          <p class="card-desc">
+            Ніжний бісквіт з какао, вершковий крем та вишнева начинка для особливих нагод.
+          </p>
+          <div class="card-meta">
+            <span class="kcal-chip">380 кКал</span>
+            <span class="difficulty">Складність: <span>середньо</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card cat-cake">
+        <div class="card-media">
+          <img src="https://kondishop.com.ua/image/catalog/Musse.jpg" alt="Шоколадний торт">
+          <span class="card-tag">Торт</span>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Торт «Три шоколади»</h2>
+          <p class="card-desc">
+            Поєднання темного, молочного та білого шоколаду з оксамитовим мусом.
+          </p>
+          <div class="card-meta">
+            <span class="kcal-chip">420 кКал</span>
+            <span class="difficulty">Складність: <span>складно</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card cat-pastry">
+        <div class="card-media">
+          <img src="https://i.ytimg.com/vi/dixz2fa5o6I/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBGwJCVkWyFQXZ9lw8ZjIluJccJug" alt="Еклер">
+          <span class="card-tag">Тістечко</span>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Еклери з ванільним кремом та карамеллю</h2>
+          <p class="card-desc">
+            Класичне заварне тісто з щедрою начинкою та тонкою карамельною глазур’ю.
+          </p>
+          <div class="card-meta">
+            <span class="kcal-chip">315 кКал</span>
+            <span class="difficulty">Складність: <span>середньо</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card cat-cheese">
+        <div class="card-media">
+          <img src="https://img-global.cpcdn.com/steps/ec30a63062e8c3db/400x400cq80/photo.jpg" alt="Ягідний сирник">
+          <span class="card-tag">Сирник</span>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Сирник «Три ягоди» на мигдальній основі</h2>
+          <p class="card-desc">
+            Оксамитовий чизкейк з мигдалевим дном та міксом літніх ягід.
+          </p>
+          <div class="card-meta">
+            <span class="kcal-chip">330 кКал</span>
+            <span class="difficulty">Складність: <span>середньо</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card cat-pie">
+        <div class="card-media">
+          <img src="https://images.unian.net/photos/2024_01/thumb_files/800_0_1706712073-6185.jpg?r=929544" alt="Яблучний пиріг">
+          <span class="card-tag">Пиріг</span>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Домашній яблучний пиріг з корицею</h2>
+          <p class="card-desc">
+            Соковиті яблука, аромат кориці та хрустка скоринка як у бабусі.
+          </p>
+          <div class="card-meta">
+            <span class="kcal-chip">275 кКал</span>
+            <span class="difficulty">Складність: <span>легко</span></span>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Контакти: <a href="mailto:tortik@smakota.ua">tortik@smakota.ua</a>
+    </p>
+    <small>© 2024 Smakota. Усі рецепти перевірено вручну.</small>
+  </footer>
+</div>
+
+</body>
+</html>
